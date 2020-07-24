@@ -4,9 +4,8 @@ const Banner = () => {
     return (
         <section id="banner">
             <div className="inner">
-                <h1>Industrious</h1>
-                <p>A responsive business oriented template with a video background<br />
-					designed by <a href="https://templated.co/">TEMPLATED</a> and released under the Creative Commons License.</p>
+                <h1>Plomería Bautista Ángel</h1>
+                <p>Empresa familiar en la que cada uno de nosotros nos comprometemos a la mejor calidad de servicios.</p>
             </div>
             <video autoPlay loop muted playsInline src="images/banner.mp4"></video>
         </section>

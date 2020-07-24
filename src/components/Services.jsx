@@ -6,7 +6,11 @@ const Services = () => {
 				<div className="inner">
 					<header className="special">
 						<h2>Servicios</h2>
-						<p>Ofrecemos la mejor cálidad nuestros servicios, siempre teniendo la precauciones que la situación actual requiere.</p>
+						<p>
+							Ofrecemos una amplia variedad de servicios, los cuales vienen acompañados 
+							con un gran compromiso de calidad y excelencia. Tenemos la posibilidad de 
+							transladarnos a cualquier punto del AMBA.
+						</p>
 					</header>
 					<div className="highlights">
 						<section>
