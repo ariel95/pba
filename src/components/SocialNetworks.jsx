@@ -7,14 +7,14 @@ import facebook from '../public/images/facebook-circle.png'
 const SocialNetworks = () => {
     return (
         <section id="social-networks">
-                            <h4>Nuestras redes sociales</h4>
-                            <ul className="plain">
-                                <li><a href="#"><img src={mail} alt=""/><span>Email</span></a></li>
-                                <li><a href="#"><img src={instagram} alt=""/><span>Instagram</span></a></li>
-                                <li><a href="#"><img src={facebook} alt=""/><span>Facebook</span></a></li>
-                                <li><a href="https://api.whatsapp.com/send?phone=5491136331413&text=hi"><img src={whatsapp} alt=""/><span>Whatsapp</span></a></li>
-                            </ul>
-                        </section>
+            <h4>Nuestras redes sociales</h4>
+            <ul className="plain">
+                <li><a href="mailto: arielbvergara@gmail.com"><img src={mail} alt="" /><span>Email: bautistaangel@gmail.com</span></a></li>
+                <li><a href="https://www.instagram.com/?hl=es-la"><img src={instagram} alt="" /><span>Instagram: _bautistaangel</span></a></li>
+                <li><a href="https://www.facebook.com/bautista.angel.336"><img src={facebook} alt="" /><span>Facebook: Bautista Ángel</span></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5491165681980&text=Hola! Quería consultarles..."><img src={whatsapp} alt="" /><span>Whatsapp: +541165681980</span></a></li>
+            </ul>
+        </section>
     )
 }
 

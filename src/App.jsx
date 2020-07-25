@@ -33,7 +33,7 @@ function App() {
 				<div className="info">
 					<Banner />
 					<Services />
-					<MoreInfo />
+					{/* <MoreInfo /> */}
 					<AboutUs />
 					<Contact />
 				</div>
