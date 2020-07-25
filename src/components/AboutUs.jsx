@@ -5,8 +5,8 @@ const AboutUs = () => {
         <section id="about-us" className="wrapper">
 				<div className="inner">
 					<header className="special">
-						<h2>Faucibus consequat lorem</h2>
-						<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
+						<h2>Sobre nosotros</h2>
+						<p>Somos una empresa familiar que se dedica a brindarle la mejora calidad de servicios.</p>
 					</header>
 					<div className="testimonials">
 						<section>

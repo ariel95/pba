@@ -19,7 +19,7 @@ const Services = () => {
 									<a href="#" className="icon fa-vcard-o"><span className="label">Icon</span></a>
 									<h3>Cañerías de cloacas</h3>
 								</header>
-								<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+								<p>Realizamos todo tipo de destapaciones, cañerias, Cloacas, Pluviales, Baños, Cocinas. 24 Hs. de Servicio. Servicio al Instante. Garantía de Servicio. Presupuestos Inmediatos.</p>
 							</div>
 						</section>
 						<section>
@@ -89,7 +89,7 @@ const Services = () => {
 							<div className="content">
 								<header>
 									<a href="#" className="icon fa-qrcode"><span className="label">Icon</span></a>
-									<h3>Instalación de gas natural</h3>
+									<h3>Construcciones pequeñas</h3>
 								</header>
 								<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
 							</div>

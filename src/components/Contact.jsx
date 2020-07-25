@@ -27,7 +27,7 @@ const Contact = () => {
                         <SocialNetworks />
                     </div>
                     <div className="copyright">
-                        &copy;Plomería Bautista Ángel. Web site made by <a href="https://arielbvergara-cv.web.app/"> Ariel Vergara</a>.
+                        &copy;Plomería Bautista Ángel. Web site made by <a style={{color:"#2bbdb0"}} href="https://arielbvergara-cv.web.app/"> Ariel Vergara</a>.
 					</div>
                 </div>
             </footer>

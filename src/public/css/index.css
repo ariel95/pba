@@ -100,7 +100,11 @@ html {
       font-size: 12pt; } }
   @media screen and (max-width: 480px) {
     html {
-      font-size: 11pt; } }
+      font-size: 11pt; } 
+      #social-networks #mail span{
+        font-size: 13px;
+      }
+    }
 
 body {
   background-color: #ffffff;
@@ -2483,6 +2487,7 @@ body {
 @media screen and (max-width: 480px) {
   #header {
     min-width: 320px; } }
+  
 /* Heading */
 #heading {
   -ms-flex-align: center;
