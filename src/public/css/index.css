@@ -2351,8 +2351,8 @@ ul.icons {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex; }
-    #footer .content section {
-      width: 25%; }
+    /* #footer .content section {
+      width: 25%; } */
       #footer .content section:first-child {
         width: 50%;
         padding-right: 4rem; }
@@ -2373,8 +2373,8 @@ ul.icons {
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-      #footer .content section {
-        width: 50%; }
+      /* #footer .content section {
+        width: 50%; } */
         #footer .content section:first-child {
           width: 100%;
           padding-right: 0; } }

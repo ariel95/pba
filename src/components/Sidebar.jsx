@@ -1,9 +1,12 @@
 import React from 'react'
 import '../public/css/sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+
+    const {setIsMenuActive} = props
+
     return (
-        <div className="bg-light border-right" id="sidebar-wrapper">
+        <div className="bg-light border-right" id="sidebar-wrapper" onClick={() => setIsMenuActive(false)}>
             {/* <div className="sidebar-heading">Start Bootstrap </div> */}
             <div className="list-group list-group-flush">
                 <a href="#" className="list-group-item list-group-item-action bg-light">Inicio</a>

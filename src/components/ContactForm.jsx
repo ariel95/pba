@@ -1,25 +1,66 @@
 import React from 'react'
 import '../public/css/contact.css'
-const ContactForm = () => {
+const ContactForm = (props) => {
+
+    const [status, setStatus] = React.useState("");
+
+
+    function submitForm(ev) {
+        ev.preventDefault();
+        const form = ev.target;
+        const data = new FormData(form);
+        const xhr = new XMLHttpRequest();
+        xhr.open(form.method, form.action);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                form.reset();
+                setStatus("SUCCESS");
+            } else {
+                setStatus("ERROR");
+            }
+        };
+        xhr.send(data);
+    }
+
     return (
         <section id="contact-form">
-            <form>
-                <div class="form-group">
-                    <label for="form-name">Nombre</label>
-                    <input type="text" class="form-control" id="form-name" />
+            <form
+                onSubmit={submitForm}
+                action="https://formspree.io/xrgyryda"
+                method="POST"
+            >
+                <div className="form-group">
+                    <label htmlFor="form-name">Nombre</label>
+                    <input type="text" name="name" className="form-control" id="form-name" />
                 </div>
-                <div class="form-group">
-                    <label for="form-email">Email</label>
-                    <input type="text" class="form-control" id="form-email" aria-describedby="emailHelp" />
+                <div className="form-group">
+                    <label htmlFor="form-email">Email</label>
+                    <input type="text" name="email" className="form-control" id="form-email" aria-describedby="emailHelp" />
                 </div>
-                <div class="form-group">
-                    <label for="form-message">Mensaje</label>
-                    <textarea type="text" class="form-control" id="form-message" placeholder="Ingrese su mensaje aquí">
+                <div className="form-group">
+                    <label htmlFor="form-message">Mensaje</label>
+                    <textarea type="text" name="message" className="form-control" id="form-message" placeholder="Ingrese su mensaje aquí">
 
                     </textarea>
                 </div>
-                
-                <button type="submit" class="btn btn-primary">Enviar</button>
+
+                {status === "LOADING" ? (
+                    <button type="submit" className="btn btn-primary" >
+                        <div className="spinner-border text-light" role="status" style={{ width: "20px", height: "20px" }}>
+                            <span className="sr-only">Loading...</span>
+                        </div>
+                    </button>
+                ) : (
+                        <button type="submit" className="btn btn-primary" onClick={() => setStatus("LOADING")}>
+                            <span>Enviar</span>
+                        </button>
+                    )
+                }
+                {status === "SUCCESS" && <p>¡Gracias por enviarnos su mensaje!</p>}
+                {status === "ERROR" && <p>Ooops! Hubo un error para enviar su mensaje.</p>}
+
             </form>
         </section>
     )

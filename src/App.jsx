@@ -28,8 +28,8 @@ function App() {
 	return (
 		<div className={width <= 700 ? (isMenuActive ? "App is-mobile" : "App is-mobile toggled")  : "App"}>
 			<Header setIsMenuActive={setIsMenuActive} isMenuActive={isMenuActive} />
-			<div className="content">
-				<Sidebar isMenuActive={isMenuActive} />
+			<div className="content" onClick ={() => setIsMenuActive(false)}>
+				<Sidebar setIsMenuActive={setIsMenuActive} isMenuActive={isMenuActive}  />
 				<div className="info">
 					<Banner />
 					<Services />
