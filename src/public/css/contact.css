@@ -1,0 +1,28 @@
+#contact input[type="text"]{
+    height: 30px;
+}
+
+#contact button {
+    float: right;
+    margin-bottom: 25px;
+    width: 100px;
+    height: 40px;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+#contact button:hover{
+    color: white !important;
+    background: #222222;
+    box-shadow: none;
+}
+
+#social-networks img{
+    width: 30px;
+}
+
+#social-networks span {
+    top: -10px;
+    position: relative;
+    left: 13px;
+}
