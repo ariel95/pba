@@ -856,11 +856,11 @@ table.alt tbody tr td {
       .testimonials .content .author blockquote {
         margin: 0; }
       .testimonials .content .author .image {
-        margin-right: 2rem;
+        /* margin-right: 2rem; */
         width: 20%; }
         .testimonials .content .author .image img {
           border-radius: 100%;
-          max-width: 100%; }
+          max-width: 70%; }
     .testimonials .content .credit {
       font-size: 0.75rem; }
     .testimonials .content p:last-child {

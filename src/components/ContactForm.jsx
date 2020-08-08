@@ -33,11 +33,11 @@ const ContactForm = (props) => {
             >
                 <div className="form-group">
                     <label htmlFor="form-name">Nombre</label>
-                    <input type="text" name="name" className="form-control" id="form-name" />
+                    <input type="text" name="name" className="form-control" id="form-name" placeholder="Ingrese su nombre aquí" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="form-email">Email</label>
-                    <input type="text" name="email" className="form-control" id="form-email" aria-describedby="emailHelp" />
+                    <input type="text" name="email" className="form-control" id="form-email" aria-describedby="emailHelp" placeholder="Ingrese su email aquí" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="form-message">Mensaje</label>
