@@ -801,6 +801,7 @@ table.alt tbody tr td {
 
 /* Testimonials */
 .testimonials {
+  justify-content: center;
   margin: 2.5rem 0;
   width: 100%;
   display: -moz-flex;
